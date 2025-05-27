@@ -8,7 +8,7 @@ permissions:
   contents: read
 jobs:
   build:
-    runs-on: ubuntu-lstest
+    runs-on: ubuntu-latest
 
     steps:
       # 깃허브 리포지토리에서 소스 코드 체크아웃
