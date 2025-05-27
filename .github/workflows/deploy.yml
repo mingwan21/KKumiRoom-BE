@@ -32,6 +32,7 @@ jobs:
       # 환경변수 설정 (application.yml 작성)
       - name: Set application.yml for environment
         run: |
+          mkdir src/main/resources
           echo "${{ secrets.APPLICATION_YML }}" > src/main/resources/application.yml
 
       # Gradle 빌드 (테스트 제외)
